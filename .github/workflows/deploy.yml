@@ -1,0 +1,14 @@
+name: deploy
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the app
+        run: echo "Building tms-api version ${{ github.ref_name }}"
