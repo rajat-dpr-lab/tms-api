@@ -27,7 +27,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Change'
-          change-request: '{"setCloseCode":"true","autoCloseChange":true,"attributes":{"short_description":"tms-api ${{ github.ref_name }} deploy to GDC + IDC","description":"Pipeline change. Risk Assessment + Golden Rules + approvals required before deploy.","assignment_group":"PASTE_VAS_APPDEV_SYS_ID","implementation_plan":"Deploy GDC, then IDC","backout_plan":"Redeploy previous version via rollback workflow","test_plan":"Smoke test per DC"}}'
+          change-request: '{"setCloseCode":"true","autoCloseChange":true,"attributes":{"short_description":"tms-api ${{ github.ref_name }} deploy to GDC + IDC","description":"Pipeline change. Risk Assessment + Golden Rules + approvals required before deploy.","assignment_group":"c30964a9831c5710673c9be0deaad3df","implementation_plan":"Deploy GDC, then IDC","backout_plan":"Redeploy previous version via rollback workflow","test_plan":"Smoke test per DC"}}'
           interval: '60'
           timeout: '86400'
           changeCreationTimeOut: '600'
